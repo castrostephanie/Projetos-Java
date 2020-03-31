@@ -1,6 +1,7 @@
 package PageObject;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 
 public class ComprarPage {
@@ -21,6 +22,7 @@ public class ComprarPage {
 	private By proceedtwo = By.xpath("//*[@id=\"center_column\"]/p[2]/a[1]");
 	private By email = By.xpath("//*[@id=\"email\"]");
 	private By password = By.xpath("//*[@id=\"SubmitLogin\"]");
+	private By singin = By.xpath("//*[@id=\"SubmitLogin\"]");
 	private By proceedcheckout = By.xpath("//*[@id=\"center_column\"]/form/p/button");
 	private By terms = By.xpath("//*[@id=\"form\"]/div/p[2]/label");
 	private By proceedthree = By.xpath("//*[@id=\"form\"]/p/button");
@@ -32,15 +34,19 @@ public class ComprarPage {
 		driver.findElement(dresses).click();
 	}
 	
-	public void clickPrinted() {
-		driver.findElement(printed).click(); 
-	}
-	
 	public void clickSummerDresses() {
 		driver.findElement(summerdresses).click();
 	}
-
+	
+	public void clickPrinted() {
+		JavascriptExecutor js = (JavascriptExecutor) driver; 
+		js.executeScript("javascript:window.scrollBy(0,700)");
+		driver.findElement(printed).click(); 
+	}
+	
 	public void clickQuantity() {
+		JavascriptExecutor js = (JavascriptExecutor) driver; 
+		js.executeScript("javascript:window.scrollBy(0,900)");
 		driver.findElement(quantity).click();
 	}
 	
@@ -61,10 +67,14 @@ public class ComprarPage {
 	}
 	
 	public void ClickProceedTwo() {
+		JavascriptExecutor js = (JavascriptExecutor) driver; 
+		js.executeScript("javascript:window.scrollBy(0,1100)");
 		driver.findElement(proceedtwo).click();
 	}
 	
 	public void setEmail(String Username) {
+		JavascriptExecutor js = (JavascriptExecutor) driver; 
+		js.executeScript("javascript:window.scrollBy(0,900)");
 		driver.findElement(email).sendKeys("dossantos@leonardopereira.com");
 	}
 	
@@ -72,11 +82,19 @@ public class ComprarPage {
 		driver.findElement(password).sendKeys("teste");
 	}
 	
+	public void clickSingin() {
+		driver.findElement(singin).click();
+	}
+	
 	public void clickProceedcheckout() {
+		JavascriptExecutor js = (JavascriptExecutor) driver; 
+		js.executeScript("javascript:window.scrollBy(0,1100)");
 		driver.findElement(proceedcheckout).click();
 	}
 	
 	public void clickTerms() {
+		JavascriptExecutor js = (JavascriptExecutor) driver; 
+		js.executeScript("javascript:window.scrollBy(0,1000)");
 		driver.findElement(terms).click();
 	}
 	
@@ -85,14 +103,20 @@ public class ComprarPage {
 	}
 	
 	public void clickPayby() {
+		JavascriptExecutor js = (JavascriptExecutor) driver; 
+		js.executeScript("javascript:window.scrollBy(0,1000)");
 		driver.findElement(payby).click();
 	}
 	
 	public void clickMyorder() {
+		JavascriptExecutor js = (JavascriptExecutor) driver; 
+		js.executeScript("javascript:window.scrollBy(0,1100)");
 		driver.findElement(myorder).click();
 	}
 	
 	public void clickBoleto() {
+		JavascriptExecutor js = (JavascriptExecutor) driver; 
+		js.executeScript("javascript:window.scrollBy(0,1000)");
 		driver.findElement(boleto).click();
 	}
 }
