@@ -7,7 +7,7 @@ public class Main {
 		String product1 = "Computer";
 		String product2 = "Office desk";
 		
-		//definindo variavel tipo inteiro
+		//definindo variavel tipo inteiro-
 		int age = 30;
 		int code = 5290;
 		char gender = 'F';

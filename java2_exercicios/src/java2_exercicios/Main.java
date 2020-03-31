@@ -8,7 +8,7 @@ public class Main {
 		//leitura / entrada de dados 
 		Scanner sc = new Scanner(System.in);  
 		
-		//declarando variavel do tipo decimal
+		//declarando variavel do tipo decimal.
 		int entrada1, entrada2;
 		
 		//processamento de dados

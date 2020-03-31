@@ -21,6 +21,7 @@ public class Main {
 			y = sc.nextInt();	
 		}
 		
+			
 		sc.close();
 		
 	}
