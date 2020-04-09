@@ -3,6 +3,8 @@ package PageObject;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.NoSuchElementException;
+
 
 public class ComprarPage {
 	WebDriver driver;
@@ -12,13 +14,13 @@ public class ComprarPage {
 	}
 	
 	private By dresses = By.xpath("//*[@id=\"block_top_menu\"]/ul/li[2]");
-	private By printed = By.xpath("//*[@id=\"center_column\"]/ul/li[1]/div/div[2]/h5/a");
 	private By summerdresses = By.xpath("//*[@id=\"categories_block_left\"]/div/ul/li[3]/a");
+	private By printed = By.xpath("//*[@id=\"center_column\"]/ul/li[1]/div/div[1]/div/a[1]/img");
 	private By quantity = By.xpath("//*[@id=\"quantity_wanted\"]");
 	private By size = By.xpath("//*[@id=\"group_1\"]");
 	private By color = By.xpath("//*[@id=\"color_13\"]");
 	private By addcart = By.xpath("//*[@id=\"add_to_cart\"]/button");
-	private By proceed = By.xpath("//*[@id=\"layer_cart\"]/div[1]/div[2]/div[4]/a/span");
+	private By proceed = By.xpath("//*[@id=\"layer_cart\"]/div[1]/div[2]/div[4]/a");
 	private By proceedtwo = By.xpath("//*[@id=\"center_column\"]/p[2]/a[1]");
 	private By email = By.xpath("//*[@id=\"email\"]");
 	private By password = By.xpath("//*[@id=\"SubmitLogin\"]");

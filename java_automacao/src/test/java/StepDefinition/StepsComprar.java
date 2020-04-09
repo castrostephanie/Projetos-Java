@@ -2,15 +2,15 @@ package StepDefinition;
 
 
 import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.By;
-import org.openqa.selenium.WebDriver;
+//import org.openqa.selenium.By;
+//import org.openqa.selenium.WebDriver;
 import PageObject.ComprarPage;
 import configuracoes.DriverManagerFactory;
 import configuracoes.DriverType;
 import configuracoes.GerenciadorDeDriver;
 import cucumber.api.java.Before;
 import cucumber.api.java.After;
-import cucumber.api.java.en.*;
+//import cucumber.api.java.en.*;
 import cucumber.api.java.pt.*;
 
 
@@ -38,7 +38,7 @@ public class StepsComprar {
 			comprar_page.clickDresses();
 		}
 		
-		@Quando("Clicar na opção - Summer Dresses opção Printed Summer Dress") 
+		@Quando("Clicar na opcao Summer Dresses opcao Printed Summer Dress") 
 		public void clicar_summerdress() {
 			ComprarPage comprar_page = new ComprarPage(driver);
 			comprar_page.clickSummerDresses();
@@ -56,7 +56,7 @@ public class StepsComprar {
 			comprar_page.clickQuantity();
 		}
 		
-		@Quando("Clicar em size e selecionar a opção S")
+		@Quando("Clicar em size e selecionar a opcao S")
 		public void clicar_size() {
 			ComprarPage comprar_page = new ComprarPage(driver);
 			comprar_page.clickSize();	
@@ -68,7 +68,7 @@ public class StepsComprar {
 			comprar_page.clickColor();
 		}
 		
-		@Quando("Clicar em cima da opção Add cart")
+		@Quando("Clicar em cima da opcao Add cart")
 		public void clicar_cart() {
 			ComprarPage comprar_page = new ComprarPage(driver);
 			comprar_page.clickAddcart();
@@ -88,7 +88,8 @@ public class StepsComprar {
 		
 		@Quando("Visualizar a pagina de sign in")
 		public void visualizar_singin() {
-			ComprarPage comprar_page = new ComprarPage(driver);	
+			//ComprarPage comprar_page = new ComprarPage(driver);
+			
 		}
 		
 		@Quando("Preencher os campos email e password {string} e {string}")
@@ -97,7 +98,7 @@ public class StepsComprar {
 			comprarPage.setPassword(password);
 		}
 		
-		@Quando("Clicar no botão de sing in ")
+		@Quando("Clicar no botao de sing in ")
 		public void clicar_singin() {
 			ComprarPage comprar_page = new ComprarPage(driver);		
 			comprar_page.clickSingin();
